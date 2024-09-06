@@ -1197,7 +1197,8 @@ input, select, textarea {
 		-ms-justify-content: space-between;
 		justify-content: space-between;
 		position: relative;
-		min-height: 100vh;
+/* 		min-height: 100vh; */
+		max-height: 100vh;
 		width: 100%;
 		padding: 4rem 2rem;
 		z-index: 3;
@@ -1265,7 +1266,7 @@ input, select, textarea {
 			-ms-transition: opacity 0.325s ease-in-out;
 			transition: opacity 0.325s ease-in-out;
 			position: relative;
-			margin-top: 3.5rem;
+/* 			margin-top: 1rem; */
 		}
 
 			#header > *:before {
@@ -1316,8 +1317,8 @@ input, select, textarea {
 				-webkit-transition-delay: 0.25s;
 				-ms-transition-delay: 0.25s;
 				transition-delay: 0.25s;
-				padding: 3rem 2rem;
-				max-height: 40rem;
+				padding: 1rem 2rem;
+				max-height: 30rem;
 				overflow: hidden;
 			}
 
@@ -1497,6 +1498,13 @@ input, select, textarea {
 				}
 
 		}
+		
+    .title-area {
+        display: flex;
+        width: 100%;
+        text-align: left;
+        justify-content: space-between;
+    }
 
 /* Main */
 
@@ -1656,3 +1664,5 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+		
+		
