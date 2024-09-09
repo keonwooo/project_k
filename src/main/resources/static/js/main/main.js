@@ -3,4 +3,9 @@
  */
 
 $(document).ready(function () {
+    const typingJson = {
+        wordArr: []
+        
+    };
+    
 });

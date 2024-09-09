@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+.inner {
+	width: 90vw;
+	height: 90%;
+	position: relative;
+	margin: 20px auto;
+}
+
+.background-text, .typing-area textarea {
+	font-size: 24px;
+	font-family: 'Arial', sans-serif; /* 동일한 폰트 설정 */
+	line-height: 1.5; /* 라인 높이 동일하게 설정 */
+	letter-spacing: normal; /* 글자 간격 동일하게 설정 */
+}
+
+.background-text {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+/* 	background-color: lightgray; */
+	opacity: 0.3;
+	color: black;
+	padding: 13px;
+	box-sizing: border-box;
+	text-align: left;
+}
+
+.typing-area {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.inputBox {
+	width: 100%;
+	height: 100%;
+	font-size: 24px; /* 동일한 폰트 크기 */
+	font-family: 'Arial', sans-serif; /* 동일한 폰트 설정 */
+	line-height: 1.5; /* 동일한 라인 높이 */
+	border: 2px solid gray;
+	box-sizing: border-box;
+	vertical-align: top;
+}

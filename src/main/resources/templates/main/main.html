@@ -8,35 +8,8 @@
 <!-- 공통 라이브러리 include -->
 
 <link rel="stylesheet" href="lib/HTML_template/css/main.css" />
+<link rel="stylesheet" href="css/main/main.css" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-<style>
-	.input-container {
-      position: relative;
-      width: 300px;
-    }
-
-    input {
-      width: 100%;
-      padding: 10px;
-      font-size: 16px;
-      font-family: 'Arial', sans-serif;
-      color: #333;
-      box-sizing: border-box;
-    }
-
-    /* 커스텀 placeholder 텍스트를 input과 겹쳐 보이게 설정 */
-    .placeholder-text {
-      position: absolute;
-      top: 50%;
-      left: 10px;
-      transform: translateY(-50%);
-      font-size: 16px;
-      font-family: 'Arial', sans-serif;
-      color: #aaa;
-      pointer-events: none;
-      transition: opacity 0.2s ease;
-    }
-</style>
 </head>
 <body class="is-preload">
 
@@ -58,10 +31,18 @@
 			
 			<div class="content">
 				<div class="inner">
-					<div class="input-container">
-					    <input type="text" id="name" placeholder=" " required>
-					    <span class="placeholder-text">Enter your name</span>
-					  </div>
+				    <div class="background-text">
+				        This is the first paragraph of text. This is the first paragraph of text. </br> 
+				        This is the first paragraph of text. This is the first paragraph of text. </br>
+				        This is the first paragraph of text. This is the first paragraph of text. </br> 
+				        This is the first paragraph of text. This is the first paragraph of text. </br>
+				        This is the first paragraph of text. This is the first paragraph of text. </br> 
+				        This is the first paragraph of text. This is the first paragraph of text. </br>
+				    </div>
+				    <div class="typing-area">
+				        <textarea rows="" cols="" class="inputBox"></textarea>
+<!-- 				        <input type="text" class="inputBox"> -->
+				    </div>
 				</div>
 			</div>
 			<!--            <nav> -->
