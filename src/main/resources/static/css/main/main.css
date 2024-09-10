@@ -51,3 +51,7 @@
 	box-sizing: border-box;
 	vertical-align: top;
 }
+
+.languageSelect-area {
+	width: 30vw;
+}

@@ -9,7 +9,8 @@
 
 <link rel="stylesheet" href="lib/HTML_template/css/main.css" />
 <link rel="stylesheet" href="css/main/main.css" />
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body class="is-preload">
 
@@ -28,21 +29,14 @@
 				<div>속도</div>
 				<div>오타</div>
 			</div>
-			
+
 			<div class="content">
 				<div class="inner">
-				    <div class="background-text">
-				        This is the first paragraph of text. This is the first paragraph of text. </br> 
-				        This is the first paragraph of text. This is the first paragraph of text. </br>
-				        This is the first paragraph of text. This is the first paragraph of text. </br> 
-				        This is the first paragraph of text. This is the first paragraph of text. </br>
-				        This is the first paragraph of text. This is the first paragraph of text. </br> 
-				        This is the first paragraph of text. This is the first paragraph of text. </br>
-				    </div>
-				    <div class="typing-area">
-				        <textarea rows="" cols="" class="inputBox"></textarea>
-<!-- 				        <input type="text" class="inputBox"> -->
-				    </div>
+					<div class="background-text" id="typingText-area"></div>
+					<div class="typing-area">
+						<textarea rows="" cols="" class="inputBox" id="typingBox-area"></textarea>
+						<!-- 				        <input type="text" class="inputBox"> -->
+					</div>
 				</div>
 			</div>
 			<!--            <nav> -->
@@ -53,16 +47,21 @@
 		</header>
 
 		<!-- Main -->
-		<div id="main">
-
-		</div>
+		<div id="main"></div>
 
 		<!-- Footer -->
-		<!-- 		<footer id="footer"> -->
-		<!--            <p class="copyright"> -->
-		<!--                &copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>. -->
-		<!--            </p> -->
-		<!-- 		</footer> -->
+		<footer id="footer">
+		    <div class="languageSelect-area">
+			    <select id="languageBox">
+			        <option value="eng">english</option>
+			        <option value="kor">korean</option>
+			    </select>
+		    </div>
+
+			<!--            <p class="copyright"> -->
+			<!--                &copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>. -->
+			<!--            </p> -->
+		</footer>
 
 	</div>
 
