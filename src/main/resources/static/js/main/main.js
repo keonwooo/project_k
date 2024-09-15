@@ -7,8 +7,6 @@ $(document).ready(function () {
     const typingWordArr = typingStr.split(' ');
     const typingLetterArr = typingStr.split('');
     
-    
-    
     typingWordArr.forEach((word) => {
         const wordSpan = document.createElement('span');
         wordSpan.className = 'word-class';
