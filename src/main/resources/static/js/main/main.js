@@ -5,13 +5,14 @@
 $(document).ready(function () {
     const typingStr = 'This is the first paragraph of text. This is the first paragraph of text.';
     const typingWordArr = typingStr.split(' ');
-    const typingLetterArr = typingStr.split('');
+//    const typingLetterArr = typingStr.split('');
     
     typingWordArr.forEach((word) => {
         const wordSpan = document.createElement('span');
         wordSpan.className = 'word-class';
+        const letterArr = word.split('');
         
-        typingLetterArr.forEach((letter) => {
+        letterArr.forEach((letter) => {
             const letterSpan = document.createElement('span');
             letterSpan.textContent = letter;
             letterSpan.className = 'letter-class';
