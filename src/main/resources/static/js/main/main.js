@@ -16,7 +16,6 @@ $(document).ready(function () {
         });
         document.getElementById("typingText-area").appendChild(wordSpan);
         document.getElementById("typingText-area").appendChild(document.createTextNode(' '));
-        
     });
 
     // 사용자가 입력할 때마다 문자를 배경과 비교
