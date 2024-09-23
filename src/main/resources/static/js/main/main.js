@@ -7,7 +7,8 @@ $(document).ready(function () {
         const wordSpan = document.createElement('span');
         wordSpan.className = 'word-class';
         const letterArr = word.split('');
-        
+        letterArr.push(' '); // 단어 간 간격
+
         letterArr.forEach((letter) => {
             const letterSpan = document.createElement('span');
             letterSpan.textContent = letter;
@@ -15,7 +16,6 @@ $(document).ready(function () {
             wordSpan.appendChild(letterSpan);
         });
         document.getElementById("typingText-area").appendChild(wordSpan);
-        document.getElementById("typingText-area").appendChild(document.createTextNode(' '));
     });
 
     // 사용자가 입력할 때마다 문자를 배경과 비교
@@ -27,9 +27,9 @@ $(document).ready(function () {
         typedText.split('').forEach((letter, index) => {
             if (letterElements[index]) {
                 if (letterElements[index].textContent === letter) {
-                    letterElements[index].style.visibility = 'hidden'; // 올바르게 입력된 문자는 숨김
+                    letterElements[index].style.opacity = '0'; // 올바르게 입력된 문자는 숨김
                 } else {
-                    letterElements[index].style.visibility = 'visible'; // 틀리면 다시 보임
+                    letterElements[index].style.opacity = '1'; // 틀리면 다시 보임
                     letterElements[index].style.color = 'red'; // 틀린 경우 빨간색으로 표시
                 }
             }

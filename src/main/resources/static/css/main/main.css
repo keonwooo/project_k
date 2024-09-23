@@ -1,10 +1,11 @@
 @charset "UTF-8";
 
 .inner {
-	width: 90vw;
-	height: 90%;
-	position: relative;
-	margin: 20px auto;
+    width: 90vw;
+    height: 90%;
+    position: relative;
+    margin: 20px auto;
+    box-sizing: border-box;
 }
 
 .background-text {
@@ -15,58 +16,52 @@
     height: 100%;
     opacity: 0.3;
     color: black;
-    padding: 0; /* 패딩 제거 */
+    padding: 0;
     box-sizing: border-box;
     text-align: left;
     font-size: 24px;
     line-height: 1.5;
-    letter-spacing: 0; /* 글자 간격을 기본값으로 */
-    white-space: pre-wrap; /* 줄 바꿈과 공백이 입력된 그대로 보이도록 설정 */
+    letter-spacing: 0;
+    white-space: pre-wrap;
 }
 
-.inputBox {
+.inputBox, #typingText-area, #typingBox-area {
     width: 100%;
     height: 100%;
-    font-size: 24px;
-    font-family: 'Arial', sans-serif;
-    line-height: 1.5;
+    font-size: 24px; /* 동일한 폰트 크기 */
+    line-height: 1.5; /* 동일한 줄 간격 */
+    font-family: 'Arial', sans-serif; /* 동일한 폰트 */
     border: none;
     background: transparent;
     box-sizing: border-box;
-    color: black;
+    padding: 0;
     outline: none;
     resize: none;
-    padding: 0; /* 패딩 제거 */
-    white-space: pre-wrap; /* 배경과 동일하게 줄 바꿈 유지 */
+    color: black;
+    white-space: pre-wrap; /* 줄 바꿈 유지 */
 }
 
 #typingText-area {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    font-size: 24px;
-    line-height: 1.5;
     color: lightgray;
     z-index: 1;
-    white-space: pre-wrap; /* 공백과 줄 바꿈을 배경에 맞춰 정확히 표시 */
 }
 
 #typingBox-area {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    font-size: 24px;
-    line-height: 1.5;
     color: black;
-    background: transparent;
     z-index: 2;
-    border: none;
-    outline: none;
-    resize: none;
-    padding: 0; /* 패딩 제거 */
-    white-space: pre-wrap; /* 줄 바꿈이 그대로 유지되도록 설정 */
+    background: transparent;
+}
+
+.letter-class, .word-class {
+    display: inline-block;
+    font-size: 24px; /* 글자 크기 동일 */
+    line-height: 1.5; /* 줄 간격 동일 */
+    letter-spacing: 0; /* 글자 간격 동일 */
+    color: lightgray; /* 기본 색상 설정 */
 }
