@@ -15,15 +15,16 @@ $(document).ready(function () {
             letterSpan.className = 'letter-class';
             wordSpan.appendChild(letterSpan);
         });
+        
         document.getElementById("typingText-area").appendChild(wordSpan);
     });
 
     // 사용자가 입력할 때마다 문자를 배경과 비교
-    $("#typingBox-area").on('input', function(e) {
+    $("#typingBox-area").on('input', function (e) {
         const typedText = $(this).val();
         const letterElements = document.querySelectorAll('#typingText-area .letter-class');
-        
-        // 입력된 글자가 배경 문장보다 길어지지 않도록 체크
+
+        // 입력된 글자마다 처리
         typedText.split('').forEach((letter, index) => {
             if (letterElements[index]) {
                 if (letterElements[index].textContent === letter) {
@@ -34,6 +35,16 @@ $(document).ready(function () {
                 }
             }
         });
+
+        // 사용자가 텍스트를 지웠을 때
+        if (typedText.length < letterElements.length) {
+            letterElements.forEach((letterElement, index) => {
+                if (index >= typedText.length) {
+                    letterElement.style.opacity = '1'; // 지워진 이후 글자는 다시 나타남
+                    letterElement.style.color = 'lightgray'; // 원래 색상으로 되돌림
+                }
+            });
+        }
 
         // 배경과 현재 입력된 텍스트가 정확히 일치하는지 여부를 판단
         const originalText = typingStr.substr(0, typedText.length);
