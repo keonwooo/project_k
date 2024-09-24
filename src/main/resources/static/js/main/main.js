@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    const typingStr = 'This is the first paragraph of text. This is the first paragraph of text.';
+    const typingStr = 'This demo showcases the functionality provided by the Streaming plugin. In particular, it provides three different streaming approaches, namely: An on-demand stream originated by a file (a song, in this case): different users accessing this stream would receive a personal view of the stream itself.';
     const typingWordArr = typingStr.split(' ');
 
     // 배경 텍스트를 스팬에 넣어서 출력
@@ -30,7 +30,7 @@ $(document).ready(function () {
                 if (letterElements[index].textContent === letter) {
                     letterElements[index].style.opacity = '0'; // 올바르게 입력된 문자는 숨김
                 } else {
-                    letterElements[index].style.opacity = '1'; // 틀리면 다시 보임
+                    letterElements[index].style.opacity = '0';
                     letterElements[index].style.color = 'red'; // 틀린 경우 빨간색으로 표시
                 }
             }

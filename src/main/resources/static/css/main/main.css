@@ -59,6 +59,19 @@
     background: transparent;
 }
 
+#typingText-area,
+#typingBox-area {
+    font-family: 'Courier New', Courier, monospace; /* 고정폭 폰트 */
+    font-size: 24px;
+    line-height: 1.5;
+    white-space: pre-wrap; /* 공백과 줄바꿈을 그대로 유지 */
+    word-wrap: break-word; /* 단어가 width를 넘으면 줄바꿈 처리 */
+    width: 100%; /* 동일한 너비로 유지 */
+    height: 100%;
+    overflow-wrap: break-word; /* 단어를 너비에 맞춰 줄바꿈 */
+    box-sizing: border-box;
+}
+
 .letter-class, .word-class {
     display: inline-block;
     font-size: 24px; /* 글자 크기 동일 */
