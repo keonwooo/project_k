@@ -49,9 +49,9 @@ $(document).ready(function () {
         const currentWord = words[currentWordIndex]; // 현재 입력 중인 단어
 
         // 단어가 입력창의 너비를 넘으면 줄바꿈
-        if (checkOverflow(this)) {
-            $(this).val(typedText.replace(new RegExp(currentWord + '$'), '\n' + currentWord));
-        }
+//        if (checkOverflow(this)) {
+//            $(this).val(typedText.replace(new RegExp(currentWord + '$'), '\n' + currentWord));
+//        }
 
         const letterElements = document.querySelectorAll('#typingText-area .letter-class');
 
