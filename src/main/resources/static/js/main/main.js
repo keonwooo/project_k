@@ -77,7 +77,6 @@ $(document).ready(function () {
             });
         }
         
-        
 
         // 배경과 입력된 텍스트가 일치하는지 확인
         const originalText = typingStr.substr(0, typedText.length);
