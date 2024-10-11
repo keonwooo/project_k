@@ -21,6 +21,7 @@ $(document).ready(function () {
 
     const typingBox = document.getElementById("typingBox-area");
 
+    
     // 단어가 입력 창의 너비를 초과할 때 줄을 넘기는 함수
     function checkOverflow(inputElement) {
         const tempSpan = document.createElement('span');
