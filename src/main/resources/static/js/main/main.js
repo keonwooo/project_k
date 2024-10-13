@@ -41,6 +41,7 @@ $(document).ready(function () {
         return isOverflowing;
     }
 
+    
     // 사용자가 입력할 때마다 문자를 배경과 비교하고, 단어가 길면 줄바꿈
     $("#typingBox-area").on('input', function () {
         const typedText = $(this).val();
