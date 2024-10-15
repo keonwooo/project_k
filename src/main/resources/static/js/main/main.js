@@ -52,7 +52,6 @@ $(document).ready(function () {
 //        if (checkOverflow(this)) {
 //            $(this).val(typedText.replace(new RegExp(currentWord + '$'), '\n' + currentWord));
 //        }
-
         const letterElements = document.querySelectorAll('#typingText-area .letter-class');
 
         // 입력된 글자마다 처리
