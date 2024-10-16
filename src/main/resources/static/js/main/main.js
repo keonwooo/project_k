@@ -54,6 +54,7 @@ $(document).ready(function () {
 //        }
 
         const letterElements = document.querySelectorAll('#typingText-area .letter-class');
+        
         // 입력된 글자마다 처리
         typedText.split('').forEach((letter, index) => {
             if (letterElements[index]) {
