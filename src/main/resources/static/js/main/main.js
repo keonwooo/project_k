@@ -79,5 +79,13 @@ $(document).ready(function () {
         if (!startTime) {
             startTime = new Date();
         }
+        
+        // 배경과 입력된 텍스트가 일치하는지 확인
+        const originalText = typingStr.substr(0, typedText.length);
+        if (typedText !== originalText) {
+            $(this).css('color', 'red');
+        } else {
+            $(this).css('color', 'black');
+        }
     });
 });
