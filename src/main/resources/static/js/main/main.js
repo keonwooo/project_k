@@ -25,7 +25,6 @@ $(document).ready(function () {
 
         document.getElementById("typingText-area").appendChild(wordSpan);
     });
-    
     const typingBox = document.getElementById("typingBox-area");
 
     // 타이머를 사용해 1초마다 실시간 타이핑 속도를 계산
