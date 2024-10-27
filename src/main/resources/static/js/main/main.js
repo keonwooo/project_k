@@ -24,6 +24,7 @@ $(document).ready(function () {
         });
 
         document.getElementById("typingText-area").appendChild(wordSpan);
+        
     });
     
     const typingBox = document.getElementById("typingBox-area");
