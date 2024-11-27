@@ -60,6 +60,7 @@ $(document).ready(function () {
                 }
             }
         });
+        
 
         // 사용자가 텍스트를 지웠을 때
         if (typedText.length < letterElements.length) {
