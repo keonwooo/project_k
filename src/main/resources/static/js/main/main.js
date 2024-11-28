@@ -70,6 +70,7 @@ $(document).ready(function () {
                 }
             });
         }
+        
 
         // 정확도 계산 (맞은 글자 수 / 전체 글자 수) * 100
         const accuracy = (correctCharCount / totalCharCount) * 100;
