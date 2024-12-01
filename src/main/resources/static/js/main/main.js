@@ -71,7 +71,6 @@ $(document).ready(function () {
             });
         }
         
-        
         // 정확도 계산 (맞은 글자 수 / 전체 글자 수) * 100
         const accuracy = (correctCharCount / totalCharCount) * 100;
         accDisplay.textContent = accuracy.toFixed(2) + '%'; // 소수점 2자리까지 표시
