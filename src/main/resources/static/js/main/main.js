@@ -28,6 +28,7 @@ $(document).ready(function () {
     
     const typingBox = document.getElementById("typingBox-area");
 
+    
     // 타이머를 사용해 1초마다 실시간 타이핑 속도를 계산
     function calculateCPM() {
         const currentTime = new Date();
